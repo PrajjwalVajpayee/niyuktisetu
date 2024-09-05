@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #e6f5ff;
+  }
+  
+  /* Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6f5ff;
+    background-image: url('../../assets/bg.jpg'); /* Use the hexagonal pattern here */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background-color:transparent;
+    padding: 30px;
+    border-radius: 15px;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); */
+    text-align: center;
+    width: 350px;
+    border: none;
+  }
+  
+  /* Title */
+  .title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input Group */
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .label {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .input::placeholder {
+    color: #aaa;
+  }
+  span{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 7px;
+  }
+  /* Buttons */
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 55%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 55px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px #007bff; /* Glow effect */
+    animation: glow 1s infinite alternate; /* Apply glow animation */
+  }
+  
+  .exit-button {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 120px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 18px;
+    right: 90px;
+  }
+  
+  .exit-button:hover {
+    background-color: #cc0000;
+    box-shadow: 0 0 20px #ff4c4c; /* Glow effect */
+    animation: glow-exit 1s infinite alternate; /* Apply glow animation */
+  }
+  @keyframes glow-submit {
+    from {
+      box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+    }
+    to {
+      box-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff;
+    }
+  }
+  
+  @keyframes glow-exit {
+    from {
+      box-shadow: 0 0 10px #ff4c4c, 0 0 20px #ff4c4c, 0 0 30px #ff4c4c, 0 0 40px #ff4c4c;
+    }
+    to {
+      box-shadow: 0 0 20px #ff4c4c, 0 0 30px #ff4c4c, 0 0 40px #ff4c4c, 0 0 50px #ff4c4c;
+    }
+  }
+  /* Icons */
+  .icon-user::before,
+  .icon-lock::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .icon-user::before {
+    content: "\f007"; /* Example icon code for user */
+  }
+  
+  .icon-lock::before {
+    content: "\f023"; /* Example icon code for lock */
+  }
+  
+  .icon-user{
+    color: #000000;
+  }

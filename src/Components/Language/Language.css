@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #e6f5ff;
+  }
+  
+  /* Container */
+  .timer-container {
+    position: absolute;
+    top: 0px;  /* Adjust as needed */
+    right: 10px;  /* Adjust as needed */
+    font-size: 33px;
+    color:black;
+    background-color:transparent;
+    
+    
+  }
+  .timer{
+    font-size: 33px;
+  }
+  .language-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e6f5ff;
+    background-image: url('../../assets/bg.jpg'); /* Use the hexagonal pattern here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  /* Profile Picture */
+  .profile-container {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+  }
+  
+  .profile-pic {
+    width: 150px;  
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 36px;  
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  
+  .word {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeInWord 0.5s forwards;
+    font-size: 55px;
+  }
+  
+  .word:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  .word:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .word:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  .word:nth-child(4) {
+    animation-delay: 2s;
+    font-weight: 600;
+  }
+  
+  /* Buttons Container */
+  .buttons-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeInButtons 1s forwards;
+    animation-delay: 2.5s; 
+  }
+  
+  /* Language Button */
+  .language-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 40px;  
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;  
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .language-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px #007bff;
+    animation: glow-submit 1s infinite alternate;
+  }
+  
+  
+  .exit-button {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 12px 25px; /* Adjusted padding */
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .exit-button:hover {
+    background-color: #cc0000;
+    box-shadow: 0 0 20px #ff4c4c;
+    animation: glow-exit 1s infinite alternate;
+  }
+  
+  
+  @keyframes fadeInWord {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+ 
+  @keyframes fadeInButtons {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  
+  @keyframes glow-submit {
+    from {
+      box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+    }
+    to {
+      box-shadow: 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff;
+    }
+  }
+  
+  @keyframes glow-exit {
+    from {
+      box-shadow: 0 0 10px #ff4c4c, 0 0 20px #ff4c4c, 0 0 30px #ff4c4c, 0 0 40px #ff4c4c;
+    }
+    to {
+      box-shadow: 0 0 20px #ff4c4c, 0 0 30px #ff4c4c, 0 0 40px #ff4c4c, 0 0 50px #ff4c4c;
+    }
+  }
+  
