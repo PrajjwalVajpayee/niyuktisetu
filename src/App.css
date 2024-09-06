@@ -1,0 +1,241 @@
+/* Tushar ---------- CSS---------------- */
+
+
+
+.setu1{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    color: #afb3b6;
+    
+    }
+    .element {
+      position: relative;
+      /* background: url('your-image.jpg'); */
+      background-size: cover;
+      background-position: center;
+    }
+    .checkbx{
+    
+    }
+    .checkbx:checked{
+      background-color: black;
+    }
+    
+    .element::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+      z-index: 1;
+    }
+    .element-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .slider-wrapper {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .slider-controls {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+    }
+    
+    .slider-controls button {
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+    }
+    
+    .slider-controls .active {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .text-slider{
+      animation:  movetext 6000ms linear infinite;
+      filter: grayscale(100%);
+    }
+    @keyframes movetext{
+      0%{
+        transform: translateX(-90%);
+    
+      }
+      100%{
+        transform: translateX(-40%);
+      }
+    }
+    .slide-slider{
+      animation:  movetext 10000ms linear infinite;
+    }
+    @keyframes movetext{
+      0%{
+        transform: translateX(0);
+    
+      }
+      100%{
+        transform: translateX(-21.5%);
+      }
+    }
+    
+    .montserrat{
+      font-family: "Montserrat", sans-serif;
+    
+      font-style:normal;
+    }
+    
+    .glow-box{
+      /* -webkit-box-shadow:0px 0px 12px 4px rgba(45,255,196,0.91);
+    -moz-box-shadow: 0px 0px 12px 4px rgba(45,255,196,0.91);
+    /* box-shadow: 0px 0px 12px 4px rgba(45,255,196,0.91); */
+    border: 1px solid black;
+    
+      -webkit-box-shadow:0px 0px 8px 0px #247987;
+    -moz-box-shadow: 0px 0px 8px 0px #247987;
+    box-shadow: 0px 0px 8px 0px #247987;
+    } 
+    
+    
+    .bx-1{
+      transition:all;
+      animation:  bx-a1 3000ms linear infinite;
+    }
+    .box-m{
+      animation: tranisition-x 100ms linear 1;
+    
+    }
+    @keyframes tranisition-x {
+      0%{
+        transform: translateX(400px);
+      
+      }
+      100%{
+        transform: translateX(0px);
+      }
+      
+    }
+    @keyframes bx-a1{
+      0%{
+        background-color:aqua;
+      }
+      25%{
+        background-color: aqua;
+      }
+      50%{
+       background-color:purple;
+      }
+      75%{
+        background-color:red;
+      }
+      100%{
+        background-color: aqua;
+    
+      }
+    }
+      .bx-2{
+        transition:all;
+        animation:  bx-a2 3000ms ease-in infinite;
+      }
+      @keyframes bx-a2{
+        0%{
+          background-color:white;
+        }
+        25%{
+          background-color: white;
+        }
+        50%{
+         background-color:purple;
+        }
+        75%{
+          background-color:red;
+        }
+        100%{
+          background-color: white;
+      
+        }
+      }
+    
+      .bx-3{
+        transition:all;
+        animation:  bx-a3 3000ms linear infinite;
+      }
+      @keyframes bx-a3{
+        0%{
+          background-color:white;
+        }
+        25%{
+          background-color: white;
+        }
+        50%{
+         background-color:white;
+        }
+        75%{
+          background-color:red;
+        }
+        100%{
+          background-color: white;
+      
+        }
+      }
+      
+      
+    .checkxx:checked~.boxgoli{
+      background-color: blue;
+      transform: translateX(20px);
+      left: 20px;
+      
+    
+    }
+    
+    .textAnimation{
+      /* transition:all  linear 2s; */
+      transition-delay: 4s;
+      animation: fadeInWord 1s  linear 1;
+    
+    
+    }
+    
+    @keyframes fadeInWord {
+      0%{
+        transform: translateY(20px);
+    
+      }
+      100%
+      {
+        transform: translateY(0);
+    
+      }
+    
+      }
+      
+    
+      
+    
